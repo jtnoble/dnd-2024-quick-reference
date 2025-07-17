@@ -25,3 +25,4 @@ A simple about page to learn about the tool.
 
 #### Credits
 - Inspired by [Crobi's DND 5e Quick Ref](https://github.com/crobi/dnd5e-quickref)
+- Icons from https://game-icons.net/
