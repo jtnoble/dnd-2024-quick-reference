@@ -2,34 +2,36 @@ import { Container } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 import { NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { BASE_URL } from "../config/constants";
 
 
 function NavigationBar() {
 return (
     <Navbar expand="lg" variant="dark">
       <Container>
-        <Navbar.Brand href="/#">DND 2024 Quick Reference</Navbar.Brand>
+        <Navbar.Brand href={BASE_URL}>DND 2024 Quick Reference</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/#">Home</Nav.Link>
-            <Nav.Link href="/#combat">Combat</Nav.Link>
+            <Nav.Link href={BASE_URL}>Home</Nav.Link>
+            <Nav.Link as={Link} to="/combat">Combat</Nav.Link>
             <NavDropdown 
               title="Tools" 
               id="basic-nav-dropdown"
               className="custom-dropdown"
             >
-              <NavDropdown.Item href="/#dice-roller">Dice Roller</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item as={Link} to="/dice-roller">Dice Roller</NavDropdown.Item>
+              <NavDropdown.Item href={BASE_URL}>
                 Another action
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href={BASE_URL}>Something</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href={BASE_URL}>
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/#about">About</Nav.Link>
+            <Nav.Link as={Link} to="/about">About</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
