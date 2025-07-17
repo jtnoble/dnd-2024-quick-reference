@@ -1,0 +1,29 @@
+.clickable-element {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    gap: 12px;
+}
+
+.element-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.element-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.element-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.element-description {
+    margin: 0;
+    font-style: italic;
+    font-size: 0.9rem;
+}
