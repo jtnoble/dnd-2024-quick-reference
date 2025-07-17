@@ -1,0 +1,72 @@
+/* DiceRoller.css */
+.dice-roller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dice-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.dice-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #2c3e50;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.dice-button:hover {
+    background: #34495e;
+    transform: translateY(-2px);
+}
+
+.dice-button:active {
+    transform: translateY(0);
+}
+
+.dice-button.active {
+    background: #e74c3c;
+}
+
+.dice-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.dice-result {
+    font-size: 48px;
+    font-weight: bold;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.1s ease;
+}
+
+.dice-result.rolling {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}

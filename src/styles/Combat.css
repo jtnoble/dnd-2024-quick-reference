@@ -1,0 +1,8 @@
+section {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid black 2px;
+}
+section:last-child {
+    border-bottom: 0px;
+}

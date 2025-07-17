@@ -1,4 +1,5 @@
 import { Modal, Button } from 'react-bootstrap';
+import '../styles/ActionTileContainer.css';
 
 interface ActionTileModalProps {
     show: boolean;
@@ -17,7 +18,7 @@ function ActionTileModal({ show, icon, title, description, onHide }: ActionTileM
                     <Modal.Title>{title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <p>{description}</p>
+                    <p className='modal-description'>{description}</p>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={onHide}>

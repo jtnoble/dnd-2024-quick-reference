@@ -1,69 +1,27 @@
-# React + TypeScript + Vite
+# DND 2024 Quick Reference
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What is this?
+This is a DND 2024 quick reference guide. The main point of this is to have open in a separate tab if you use computers during your DND sessions. It's meant to be an easy-to-use way for you to reference quick things in your DND campaigns.
 
-Currently, two official plugins are available:
+### Home Page
+The home page is where most of the referencing comes into play. Many elements exist on this page, telling you each of the actions you can do, separated out into Action, Reaction, Bonus Action, and more.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Combat Page
+Currently work in progress. One-page document meant to explain combat for those who may not quite understand it yet.
 
-## Expanding the ESLint configuration
+### Tools
+These are currently in development, but plan to house quick tools for you such as dice rolling and damage calculation.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### About Page
+A simple about page to learn about the tool.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## How To Run Locally
+- Make sure you have at least Node 20 installed
+- Clone the repository locally
+- Change directories to the main folder (the one with package.json, tsconfig, etc)
+- `npm install` to install dependencies
+- `npm run dev` to run locally
+- Open up your browser to http://localhost:5173
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+#### Credits
+- Inspired by [Crobi's DND 5e Quick Ref](https://github.com/crobi/dnd5e-quickref)
