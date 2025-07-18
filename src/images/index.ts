@@ -44,6 +44,7 @@ import standUpIcon from './sensuousness.png';
 import crawlIcon from './crawl.png';
 import classFeatureIcon from './cultist.png';
 import opportunityAttackIcon from './relationship-bounds.png';
+import disengageIcon from './shadow-follower.png';
 
 export {
     meleeIcon,
@@ -92,4 +93,5 @@ export {
     crawlIcon,
     classFeatureIcon,
     opportunityAttackIcon,
+    disengageIcon,
 };
