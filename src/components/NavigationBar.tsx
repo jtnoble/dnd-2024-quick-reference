@@ -15,21 +15,13 @@ return (
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href={BASE_URL}>Home</Nav.Link>
-            <Nav.Link as={Link} to="/combat">Combat</Nav.Link>
+            {/* <Nav.Link as={Link} to="/combat">Combat</Nav.Link> */}
             <NavDropdown 
               title="Tools" 
               id="basic-nav-dropdown"
               className="custom-dropdown"
             >
               <NavDropdown.Item as={Link} to="/dice-roller">Dice Roller</NavDropdown.Item>
-              <NavDropdown.Item href={BASE_URL}>
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href={BASE_URL}>Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href={BASE_URL}>
-                Separated link
-              </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
           </Nav>
