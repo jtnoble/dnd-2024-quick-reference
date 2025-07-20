@@ -45,6 +45,11 @@ import crawlIcon from './crawl.png';
 import classFeatureIcon from './cultist.png';
 import opportunityAttackIcon from './relationship-bounds.png';
 import disengageIcon from './shadow-follower.png';
+import concentrationIcon from './rear-aura.png';
+import coverIcon from './tank.png';
+import fallingIcon from './foot-trip.png';
+import heroicInspirationIcon from './beams-aura.png';
+import resistanceImmunityIcon from './shield-reflect.png';
 
 export {
     meleeIcon,
@@ -94,4 +99,9 @@ export {
     classFeatureIcon,
     opportunityAttackIcon,
     disengageIcon,
+    concentrationIcon,
+    coverIcon,
+    fallingIcon,
+    heroicInspirationIcon,
+    resistanceImmunityIcon,
 };
